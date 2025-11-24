@@ -1,0 +1,295 @@
+ /* ======== RESET ======== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(135deg, #377b8a 0%, #9047b5 100%);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(to right, #4a00e0, #9f5adc);
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      animation: slideDown 1s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-radius: 10px;
+      margin: 10px auto;
+      width: 90%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    nav a {
+      color: #e4e5ef;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4a00e0;
+      background: #fff;
+      border-radius: 20px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      animation: fadeUp 1.2s ease forwards;
+      opacity: 0;
+    }
+
+    section:nth-child(odd) {
+      animation-delay: 0.2s;
+    }
+
+    section:nth-child(even) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #fff;
+      display: block;
+      margin: 8px auto 0;
+      border-radius: 5px;
+    }
+
+    /* ======== HOME ======== */
+    .home {
+      text-align: center;
+      animation: fadeIn ease-out ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .home img {
+  width: 180px;
+  height: 180px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid;
+  box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+    .home h1 {
+      font-size: 2.2rem;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .home p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      margin-top: 10px;
+    }
+
+    /* ======== ABOUT ======== */
+    .about p {
+      text-align: center;
+      color: #e8f9ff;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      padding: 10px 0;
+    }
+
+    /* ======== SKILLS ======== */
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skills li {
+      background: linear-gradient(90deg, #4a00e0, #8e2de2);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skills li:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    /* ======== PROJECTS ======== */
+    .projects .project {
+      background: rgba(124, 90, 134, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .projects .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .projects h3 {
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .projects p {
+      color: #e0e0e0;
+      margin-bottom: 10px;
+    }
+
+    .projects a {
+      color: #46adb2;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid #432d56;
+      padding: 6px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .projects a:hover {
+      background: #00f2fe;
+      color: #111;
+    }
+
+    /* ======== CONTACT ======== */
+    .contact p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #22174c;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #76c9ea;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: linear-gradient(to right, #4a00e0, #8e2de2);
+      color: rgb(14, 13, 13);
+      margin-top: 60px;
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .skills ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+    .resume {
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg,0%,#b251db #b159dd 100%);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.resume h2 {
+  color: #141313;
+  margin-bottom: 15px;
+}
+
+.resume p {
+  font-size: 16px;
+  color: #555;
+}
+
+.resume a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6019b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume a:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+
+    .certification {
+      background: rgba(124, 90, 134, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .certification div:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+    .certification h3 {
+      color: #000000;
+      margin-bottom: 8px;
+    }
+  
